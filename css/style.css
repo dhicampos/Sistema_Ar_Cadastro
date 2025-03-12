@@ -1,0 +1,97 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Corpo da página com gradiente de fundo */
+  body {
+    min-height: 100vh;
+    background: linear-gradient(45deg, #ff9966, #ff5e62);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  /* Container principal */
+  .container {
+    background-color: #fff;
+    width: 400px;
+    max-width: 90%;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Títulos */
+  h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Formulário */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input, select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Placeholder */
+  input::placeholder {
+    color: #999;
+  }
+  
+  /* Botões */
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #ff9966, #ff5e62);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Tabela */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .link-listagem {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .link-listagem a {
+    color: #ff5e62;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  

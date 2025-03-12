@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cadastro de Servidores</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastrar Servidor</h1>
+    <form id="cadastroForm">
+      
+      <label for="tipoServidor">Tipo de Servidor</label>
+      <select id="tipoServidor" name="tipoServidor" required>
+        <option value="administrador">Servidor Administrador</option>
+        <option value="usuario">Servidor Usuário</option>
+        <option value="terceirizado">Funcionário Terceirizado</option>
+      </select>
+
+      <!-- ID -->
+      <label for="id">ID</label>
+      <input type="number" id="id" name="id" placeholder="Digite o ID" required />
+
+      <!-- Nome -->
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite o Nome" required />
+
+      <!-- Cargo -->
+      <label for="cargo">Cargo</label>
+      <input type="text" id="cargo" name="cargo" placeholder="Digite o Cargo" required />
+
+      <!-- Lotaçao (aparece somente para Administrador/Usuario) -->
+      <div id="lotacaoContainer">
+        <label for="lotacao">Lotação</label>
+        <input type="text" id="lotacao" name="lotacao" placeholder="Digite a Lotação" />
+      </div>
+
+      <!-- Empresa (aparece somente para Terceirizado) -->
+      <div id="empresaContainer" style="display: none;">
+        <label for="empresa">Nome da Empresa</label>
+        <input type="text" id="empresa" name="empresa" placeholder="Digite a Empresa" />
+      </div>
+
+      <!-- Botoes -->
+      <button type="submit" id="salvarBtn">Cadastrar</button>
+      <button type="button" id="limparBtn">Limpar Formulário</button>
+    </form>
+
+    <!-- Link para pagina de listagem (opcional) -->
+    <div class="link-listagem">
+      <a href="listagem.html">Ir para Listagem</a>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
