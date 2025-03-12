@@ -9,7 +9,7 @@
   <div class="container">
     <h1>Cadastrar Servidor</h1>
     <form id="cadastroForm">
-      
+      <!-- Tipo de Servidor -->
       <label for="tipoServidor">Tipo de Servidor</label>
       <select id="tipoServidor" name="tipoServidor" required>
         <option value="administrador">Servidor Administrador</option>
@@ -29,7 +29,7 @@
       <label for="cargo">Cargo</label>
       <input type="text" id="cargo" name="cargo" placeholder="Digite o Cargo" required />
 
-      <!-- Lotaçao (aparece somente para Administrador/Usuario) -->
+      <!-- Lotação (aparece somente para Administrador/Usuário) -->
       <div id="lotacaoContainer">
         <label for="lotacao">Lotação</label>
         <input type="text" id="lotacao" name="lotacao" placeholder="Digite a Lotação" />
@@ -41,12 +41,12 @@
         <input type="text" id="empresa" name="empresa" placeholder="Digite a Empresa" />
       </div>
 
-      <!-- Botoes -->
+      <!-- Botões -->
       <button type="submit" id="salvarBtn">Cadastrar</button>
       <button type="button" id="limparBtn">Limpar Formulário</button>
     </form>
 
-    <!-- Link para pagina de listagem (opcional) -->
+    <!-- Link para página de listagem (opcional) -->
     <div class="link-listagem">
       <a href="listagem.html">Ir para Listagem</a>
     </div>
